@@ -1,0 +1,49 @@
+http://txt2html.sourceforge.net/sample.txt
+
+-----------------
+
+- Set the connection type to GPRS
+AT+SAPBR=3,1,"Contype","GPRS"
+OK
+
+- Set the APN
+AT+SAPBR=3,1,"APN","www"
+OK
+
+- Enable the GPRS
+AT+SAPBR =1,1
+OK
+
+- Query if the connection is setup properly, if we get back a IP address then we can proceed
+AT+SAPBR=2,1
++SAPBR: 1,1,"100.120.204.132"
+OK
+
+- We were allocated a IP address and now we can proceed by enabling the HTTP mode
+AT+HTTPINIT
+OK
+
+- OPTIONAL,  ONLY IF URL is HTTPS or SSL enabled: Also Remove the http:// part in the HTTPPARA="URL",xxxx command
+AT+HTTPSSL=1
+OK
+
+- Start by setting up the HTTP bearer profile identifier
+AT+HTTPPARA="CID",1
+OK
+
+- Set the url  to the address of the webpage you want to access
+AT+HTTPPARA="URL","http://txt2html.sourceforge.net/sample.txt"
+OK
+
+- Start the HTTP GET session, by giving this command
+AT+HTTPACTION=0
+OK
+
+**The below output from module indicates it  has read 654 bytes of data and the response of the HTTP GET request is 200, which means success
++HTTPACTION:0,200,654
+
+AT+HTTPREAD
++HTTPREAD:654
+Project web is currently offline pending the final migration of its data to our new datacenter.
+
+

@@ -1,0 +1,53 @@
+latitude :6.108751
+latitude :6^6'31.502952"
+longitude :106.517448
+
+6.108751, 106.517448
+106.517448, 6.108751
+
+latitude :6.108766
+latitude :6^6'31.557884"
+longitude :106.517402
+longitude :106^31'2.649536"
+speed_kph :0.37
+heading :323.29
+
+---------------
+
+longitude :106.517372
+longitude :106^31'2.539673"
+speed_kph :0.33
+heading :302.37
+AT+CGNSPWR=0
+2018/2/11 12:14:1:0
+latitude :6.108744
+latitude :6^6'31.477203"
+longitude :106.517372
+longitude :106^31'2.539673"
+speed_kph :0.11
+heading :41.02
+AT+CGNSPWR=0
+2018/2/11 12:14:7:0
+latitude :6.108744
+latitude :6^6'31.477203"
+longitude :106.517372
+longitude :106^31'2.539673"
+speed_kph :0.15
+heading :149.43
+AT+CGNSPWR=0
+2018/2/11 12:14:13:0
+latitude :6.108744
+latitude :6^6'31.477203"
+longitude :106.517372
+longitude :106^31'2.539673"
+speed_kph :0.30
+heading :103.72
+AT+CGNSPWR=0
+2018/2/11 12:14:19:0
+latitude :6.108745
+latitude :6^6'31.482353"
+longitude :106.517379
+longitude :106^31'2.567139"
+speed_kph :0.09
+heading :206.53
+AT+CGNSPWR=0
